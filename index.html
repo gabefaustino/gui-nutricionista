@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gui Nutricionista | Emagrecimento Saudável</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-gray-700">
+    <!-- Header/Navigation -->
+    <header class="fixed w-full bg-white shadow-sm z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center mr-3">
+                        <i class="fas fa-leaf text-green-600 text-xl"></i>
+                    </div>
+                    <span class="text-xl font-bold text-green-800">Gui Nutricionista</span>
+                </div>
+                
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="text-green-600 font-medium hover:text-green-800">Início</a>
+                    <a href="#sobre" class="text-gray-600 hover:text-green-800">Sobre</a>
+                    <a href="#servicos" class="text-gray-600 hover:text-green-800">Serviços</a>
+                    <a href="#depoimentos" class="text-gray-600 hover:text-green-800">Depoimentos</a>
+                    <a href="#contato" class="text-gray-600 hover:text-green-800">Contato</a>
+                </nav>
+                
+                <a href="#contato" class="hidden md:block bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-full font-medium transition duration-300">
+                    Agende sua consulta
+                </a>
+                
+                <button class="md:hidden text-gray-600 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-gradient pt-32 pb-20 md:pt-40 md:pb-28">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 leading-tight mb-6">
+                        Emagrecimento saudável e <span class="text-green-600">qualidade de vida</span>
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-8">
+                        Transforme sua relação com a alimentação e alcance seus objetivos de forma sustentável com acompanhamento nutricional personalizado.
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="https://wa.me/5511999999999?text=Olá%20Gui,%20gostaria%20de%20agendar%20uma%20consulta" 
+                           class="btn-whatsapp bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-full font-semibold flex items-center justify-center">
+                            <i class="fab fa-whatsapp text-xl mr-3"></i> Agende pelo WhatsApp
+                        </a>
+                        <a href="#servicos" class="border-2 border-green-500 text-green-600 hover:bg-green-50 px-8 py-4 rounded-full font-semibold flex items-center justify-center">
+                            Conheça nossos serviços
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" 
+                             alt="Gui Nutricionista" class="rounded-2xl shadow-xl w-full max-w-md h-auto">
+                        <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-lg">
+                            <div class="flex items-center">
+                                <div class="bg-green-100 p-3 rounded-full mr-3">
+                                    <i class="fas fa-award text-green-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-gray-800">+5 anos</p>
+                                    <p class="text-sm text-gray-600">de experiência</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- About Section -->
+    <section id="sobre" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-10 md:mb-0 flex justify-center">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" 
+                             alt="Sobre Gui Nutricionista" class="rounded-2xl shadow-lg w-full max-w-xs h-auto">
+                    </div>
+                </div>
+                <div class="md:w-2/3 md:pl-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Sobre o Gui Nutricionista</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Meu nome é Guilherme, sou nutricionista formado pela Universidade de São Paulo (USP) com especialização em Nutrição Clínica e Emagrecimento Saudável. 
+                    </p>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Acredito que a nutrição vai muito além da contagem de calorias. Meu trabalho é baseado em uma abordagem humanizada, onde considero seus hábitos, rotina, preferências e objetivos para criar um plano alimentar que realmente funcione para você.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-8">
+                        Minha missão é ajudar você a desenvolver uma relação saudável com a comida, alcançar seus objetivos de forma sustentável e melhorar sua qualidade de vida através da alimentação.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="bg-green-50 px-6 py-3 rounded-full flex items-center">
+                            <i class="fas fa-check-circle text-green-600 mr-2"></i>
+                            <span class="font-medium">CRN-3 12345</span>
+                        </div>
+                        <div class="bg-green-50 px-6 py-3 rounded-full flex items-center">
+                            <i class="fas fa-graduation-cap text-green-600 mr-2"></i>
+                            <span class="font-medium">Pós-graduado</span>
+                        </div>
+                        <div class="bg-green-50 px-6 py-3 rounded-full flex items-center">
+                            <i class="fas fa-heartbeat text-green-600 mr-2"></i>
+                            <span class="font-medium">Abordagem humanizada</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Nossos Serviços</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Oferecemos atendimento nutricional personalizado para ajudar você a alcançar seus objetivos de saúde e bem-estar.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-white rounded-xl p-8 shadow-md">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-weight text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Emagrecimento Saudável</h3>
+                    <p class="text-gray-600 mb-6">
+                        Programa personalizado para perda de peso de forma saudável e sustentável, sem dietas restritivas ou efeito sanfona.
+                    </p>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>Plano alimentar individualizado</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>Acompanhamento semanal</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>Orientação para comer fora de casa</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card bg-white rounded-xl p-8 shadow-md">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-utensils text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Reeducação Alimentar</h3>
+                    <p class="text-gray-600 mb-6">
+                        Aprenda a fazer escolhas alimentares mais saudáveis sem abrir mão do prazer de comer bem.
+                    </p>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>Identificação de hábitos inadequados</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>Substituições inteligentes</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>Planejamento de compras e refeições</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card bg-white rounded-xl p-8 shadow-md">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-heart text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Qualidade de Vida</h3>
+                    <p class="text-gray-600 mb-6">
+                        Melhore sua saúde, disposição e bem-estar através de uma alimentação equilibrada e adequada ao seu estilo de vida.
+                    </p>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>Controle de colesterol e glicemia</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>Melhora da digestão e intestino</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>Aumento de energia e disposição</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="text-center mt-16">
+                <a href="https://wa.me/5511999999999?text=Olá%20Gui,%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços" 
+                   class="btn-whatsapp inline-block bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-full font-semibold">
+                    <i class="fab fa-whatsapp mr-2"></i> Fale comigo no WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="depoimentos" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Depoimentos de Pacientes</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Veja o que meus pacientes dizem sobre os resultados alcançados com o acompanhamento nutricional.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-white rounded-xl p-8 shadow-md border border-gray-100">
+                    <div class="flex items-center mb-6">
+                        <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Ana Clara" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Ana Clara</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic mb-6">
+                        "Perdi 12kg em 4 meses com o acompanhamento do Gui. O melhor foi que não senti que estava fazendo dieta, apenas mudei meus hábitos de forma natural e sustentável."
+                    </p>
+                    <div class="text-sm text-gray-500">
+                        <i class="fas fa-calendar-alt mr-2"></i> 5 meses atrás
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-white rounded-xl p-8 shadow-md border border-gray-100">
+                    <div class="flex items-center mb-6">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Ricardo" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Ricardo</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic mb-6">
+                        "Meu colesterol estava alto e em 3 meses de acompanhamento consegui normalizar apenas com mudanças na alimentação. O Gui me ensinou a fazer escolhas melhores no dia a dia."
+                    </p>
+                    <div class="text-sm text-gray-500">
+                        <i class="fas fa-calendar-alt mr-2"></i> 3 meses atrás
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-white rounded-xl p-8 shadow-md border border-gray-100">
+                    <div class="flex items-center mb-6">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Fernanda" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Fernanda</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic mb-6">
+                        "Depois de anos tentando dietas malucas, finalmente encontrei um profissional que me entendeu. Em 6 meses mudei completamente minha relação com a comida e me sinto muito melhor."
+                    </p>
+                    <div class="text-sm text-gray-500">
+                        <i class="fas fa-calendar-alt mr-2"></i> 8 meses atrás
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-green-600 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6">Pronto para transformar sua saúde?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">
+                Agende sua consulta e dê o primeiro passo em direção a uma vida mais saudável e equilibrada.
+            </p>
+            <a href="https://wa.me/5511999999999?text=Olá%20Gui,%20gostaria%20de%20agendar%20uma%20consulta" 
+               class="btn-whatsapp inline-block bg-white text-green-600 hover:bg-gray-100 px-8 py-4 rounded-full font-semibold">
+                <i class="fab fa-whatsapp mr-2"></i> Agendar Consulta
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row">
+                <div class="lg:w-1/2 mb-12 lg:mb-0 lg:pr-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Entre em Contato</h2>
+                    <p class="text-lg text-gray-600 mb-8">
+                        Preencha o formulário ao lado ou entre em contato diretamente por um dos canais abaixo:
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-green-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-map-marker-alt text-green-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Endereço</h4>
+                                <p class="text-gray-600">Rua das Flores, 123 - Sala 45<br>São Paulo - SP</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-green-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-phone-alt text-green-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Telefone</h4>
+                                <p class="text-gray-600">(11) 99999-9999</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-green-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-envelope text-green-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Email</h4>
+                                <p class="text-gray-600">contato@guinutricionista.com.br</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-green-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-clock text-green-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Horário de Atendimento</h4>
+                                <p class="text-gray-600">Segunda a Sexta: 8h às 18h<br>Sábado: 8h às 12h</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-10">
+                        <h4 class="font-bold text-gray-800 mb-4">Redes Sociais</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-12 h-12 bg-green-100 hover:bg-green-200 rounded-full flex items-center justify-center text-green-600">
+                                <i class="fab fa-instagram text-xl"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-green-100 hover:bg-green-200 rounded-full flex items-center justify-center text-green-600">
+                                <i class="fab fa-facebook-f text-xl"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-green-100 hover:bg-green-200 rounded-full flex items-center justify-center text-green-600">
+                                <i class="fab fa-youtube text-xl"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-green-100 hover:bg-green-200 rounded-full flex items-center justify-center text-green-600">
+                                <i class="fab fa-linkedin-in text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <div class="bg-white rounded-xl shadow-md p-8">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Envie sua Mensagem</h3>
+                        <form id="contactForm" class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Nome Completo</label>
+                                <input type="text" id="name" name="name" class="form-input w-full px-4 py-3 rounded-lg border focus:outline-none focus:ring-2 focus:ring-green-200" required>
+                            </div>
+                            
+                            <div>
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                                <input type="email" id="email" name="email" class="form-input w-full px-4 py-3 rounded-lg border focus:outline-none focus:ring-2 focus:ring-green-200" required>
+                            </div>
+                            
+                            <div>
+                                <label for="phone" class="block text-gray-700 font-medium mb-2">Telefone</label>
+                                <input type="tel" id="phone" name="phone" class="form-input w-full px-4 py-3 rounded-lg border focus:outline-none focus:ring-2 focus:ring-green-200" required>
+                            </div>
+                            
+                            <div>
+                                <label for="service" class="block text-gray-700 font-medium mb-2">Serviço de Interesse</label>
+                                <select id="service" name="service" class="form-input w-full px-4 py-3 rounded-lg border focus:outline-none focus:ring-2 focus:ring-green-200">
+                                    <option value="">Selecione um serviço</option>
+                                    <option value="emagrecimento">Emagrecimento Saudável</option>
+                                    <option value="reeducacao">Reeducação Alimentar</option>
+                                    <option value="qualidade">Qualidade de Vida</option>
+                                    <option value="outro">Outro</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label for="message" class="block text-gray-700 font-medium mb-2">Mensagem</label>
+                                <textarea id="message" name="message" rows="4" class="form-input w-full px-4 py-3 rounded-lg border focus:outline-none focus:ring-2 focus:ring-green-200"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white px-6 py-4 rounded-lg font-semibold transition duration-300">
+                                Enviar Mensagem
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center mr-3">
+                            <i class="fas fa-leaf text-green-600 text-xl"></i>
+                        </div>
+                        <span class="text-xl font-bold">Gui Nutricionista</span>
+                    </div>
+                    <p class="text-gray-400 max-w-xs">
+                        Nutrição humanizada para emagrecimento saudável, reeducação alimentar e qualidade de vida.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Links Úteis</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#inicio" class="text-gray-400 hover:text-white">Início</a></li>
+                            <li><a href="#sobre" class="text-gray-400 hover:text-white">Sobre</a></li>
+                            <li><a href="#servicos" class="text-gray-400 hover:text-white">Serviços</a></li>
+                            <li><a href="#depoimentos" class="text-gray-400 hover:text-white">Depoimentos</a></li>
+                            <li><a href="#contato" class="text-gray-400 hover:text-white">Contato</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Serviços</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white">Emagrecimento</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Reeducação Alimentar</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Qualidade de Vida</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Consultoria</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Contato</h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <i class="fas fa-phone-alt mr-2 text-gray-400"></i>
+                                <span class="text-gray-400">(11) 99999-9999</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-envelope mr-2 text-gray-400"></i>
+                                <span class="text-gray-400">contato@guinutricionista.com.br</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-map-marker-alt mr-2 text-gray-400"></i>
+                                <span class="text-gray-400">São Paulo - SP</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">
+                    &copy; 2023 Gui Nutricionista. Todos os direitos reservados.
+                </p>
+                
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-facebook-f text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-youtube text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-linkedin-in text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/5511999999999?text=Olá%20Gui,%20gostaria%20de%20agendar%20uma%20consulta" 
+       class="fixed bottom-6 right-6 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition duration-300 z-50">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <script>
+        // Simple form submission handler
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const service = document.getElementById('service').value;
+            const message = document.getElementById('message').value;
+            
+            // Here you would typically send this data to a server
+            // For this example, we'll just show an alert
+            alert(`Obrigado, ${name}! Sua mensagem foi enviada com sucesso. Entraremos em contato em breve.`);
+            
+            // Reset form
+            this.reset();
+        });
+        
+        // Mobile menu toggle (would need more implementation for full functionality)
+        document.querySelector('header button').addEventListener('click', function() {
+            alert('Menu mobile seria implementado aqui');
+        });
+    </script>
+</body>
+</html>
